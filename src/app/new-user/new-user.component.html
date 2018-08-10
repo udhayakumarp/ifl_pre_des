@@ -1,0 +1,131 @@
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+
+<div class="addNew">
+  <div class="row activityRow">
+    <div class="col-sm-9 rightsideBigBar">
+      <div class="allThreeButtons text-center">
+        <div class="allThreeButtons text-center">
+          <a  routerLinkActive="active" class="topButtons noRightBorder" routerLink="/activity">Activity</a><a class="topButtons" routerLink="/precases">PRE cases</a>
+        </div>
+        <h5 class="breadCum"><a routerLink="/dashboard">Home</a> / <a routerLink="/NewUser">New User</a></h5>
+      </div>
+      <div class="mainChangedDiv">
+        <h2 class="mainHeading">New</h2>
+        <div class="viewerDiv">
+          <form class="buyNowForm2" name="buy-now-form">
+            <div class="row buyNowFormRow">
+              <div class="col-sm-6 form6Col">
+                <input type="text" id="fName" placeholder="First Name" class="form-control formInput">
+              </div>
+              <div class="col-sm-6 form6Col">
+                <input type="text" id="lName" placeholder="Last Name" class="form-control formInput">
+              </div>
+            </div>
+
+            <div class="row buyNowFormRow">
+              <div class="col-sm-6 form6Col">
+                <div class="DatePicker">
+                  <my-date-picker placeholder="Age"></my-date-picker>
+                </div>
+              </div>
+
+              <div class="col-sm-6 form6Col genderForm">
+                <h5>Gender</h5>
+                <div class="col-md-6">
+                  <input type="radio" id="test1" name="radio-group1" checked>
+                  <label for="test1" class="checkText">Male</label>
+                </div>
+                <div class="col-md-6">
+                  <input type="radio" id="test2" name="radio-group1">
+                  <label for="test2" class="checkText">Female</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row buyNowFormRow">
+              <div class="col-sm-12">
+                <div class="MapBorder">
+                  <ng4geo-autocomplete></ng4geo-autocomplete>
+                </div>
+              </div>
+            </div>
+            <div class="row buyNowFormRow">
+              <div class="col-sm-12 OccupationText">
+                <h5>Occupation</h5>
+                <div class="col-md-4 bottomGreyClr">
+                  <input type="radio" id="private" name="radio-group2">
+                  <label for="private" class="checkText">Private</label>
+                </div>
+                <div class="col-md-4 bottomGreyClr">
+                  <input type="radio" id="government" name="radio-group2" checked>
+                  <label for="government" class="checkText">Government</label>
+                </div>
+                <div class="col-md-4 bottomGreyClr">
+                  <input type="radio" id="self" name="radio-group2">
+                  <label for="self" class="checkText">Self Employed</label>
+                </div>
+              </div>
+            </div>
+            <div class="row buyNowFormRow">
+              <div class="col-sm-12 OccupationText mbottom">
+                <h5>Income</h5>
+                <div class="myWizard">
+                  <mat-slider
+                    class="example-margin"
+                    [disabled]="disabled"
+                    [invert]="invert"
+                    [max]="max"
+                    [min]="min"
+                    [step]="step"
+                    [thumb-label]="thumbLabel"
+                    [tick-interval]="tickInterval"
+                    [vertical]="vertical"
+                    #MatSlider
+                    >
+                  </mat-slider>
+                </div>
+              </div>
+              <div class="row buyNowFormRow text-center">
+              <div class="col-sm-12 mtop53">
+                <span style="width:50%;float:left">0 Lakh</span>
+                <span style="width:50%;float:left">{{MatSlider.value}} Lakh</span>
+              </div>
+            </div>
+            </div>
+            <div class="row buyNowFormRow">
+              <div class="col-sm-12">
+                <div class="row">
+                  <div class="col-md-3 maritaltopLarge bottomGreyClr OccupationText">
+                    <h5>Marital Status</h5>
+                  </div>
+                  <div class="col-md-3 bottomGreyClr mtop53">
+                    <input type="radio" id="test3" name="radio-group4" checked>
+                    <label for="test3" class="checkText">Single</label>
+                  </div>
+                  <div class="col-md-3 bottomGreyClr mtop53">
+                    <input type="radio" id="test9" name="radio-group4">
+                    <label for="test9" class="checkText">Married</label>
+                  </div>
+                  <div class="col-md-3 bottomGreyClr mtop53">
+                    <input type="radio" id="divorced" name="radio-group4">
+                    <label for="divorced" class="checkText">Other</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row submitBTN">
+              <div class="col-sm-12 text-center mbottom35">
+                <a routerLink="/Questionnaire">
+                  <button type="button" class="btn btn-info" id="buyNowSubmitBtn">CONTINUE</button>
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

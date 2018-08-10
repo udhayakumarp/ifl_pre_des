@@ -1,0 +1,613 @@
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+
+
+
+<div class="PreCases">
+  <div class="row activityRow">
+    <div class="col-sm-9 rightsideBigBar">
+      <div class="allThreeButtons text-center">
+          <a class="topButtons noRightBorder" routerLink="/activity">Activity</a><a class="topButtons" routerLink="/precases" routerLinkActive="active">PRE cases</a><img class="filterImage" (click)="filter1()" src="assets/imgs/imgs/Filter.png">
+        <h5 class="breadCum"><a routerLink="/dashboard">Home</a> / <a routerLink="/precases">Pre Cases</a></h5>
+      </div>
+
+      <div *ngIf="show">
+        <div class="form-group">
+          <div class="input-group">
+            <input class="form-control" type="text" name="search" />
+            <span class="input-group-btn">
+                <button class="btn searchBtn" type="submit">
+                    <span style="margin-left:10px;">Search</span>
+                </button>
+
+              </span>
+          </div>
+        </div>
+      </div>
+      <div class="mainChangedDiv">
+
+        <div class="tab-content">
+          <div class="viewerDiv mtop40 tab-pane fade in active" id="tab1">
+            <table class="points_table">
+              <thead>
+              <tr>
+                <th class="col-xs-4" style="background: #0093e0">Name</th>
+                <th class="col-xs-5" style="background: #e86f16">Mobile</th>
+                <th class="col-xs-1" style="background: #0093e0">SR ID</th>
+                <th class="col-xs-1" style="background: #e86f16">PRE</th>
+                <th class="col-xs-1" style="background: #0093e0"></th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr class="odd">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="odd">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="odd">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="odd">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="odd">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="odd">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="odd">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="odd">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="odd">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="odd">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="viewerDiv mtop40 tab-pane fade in" id="tab2">
+            <table class="points_table">
+              <thead>
+              <tr>
+                <th class="col-xs-4" style="background: #0093e0">Name</th>
+                <th class="col-xs-5" style="background: #e86f16">Mobile</th>
+                <th class="col-xs-1" style="background: #0093e0">SR ID</th>
+                <th class="col-xs-1" style="background: #e86f16">PRE</th>
+                <th class="col-xs-1" style="background: #0093e0"></th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr class="odd">
+                <td class="col-xs-4">Anil1</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="odd">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="odd">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="odd">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="odd">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="odd">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="odd">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="odd">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="odd">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="odd">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="viewerDiv mtop40 tab-pane fade in" id="tab3">
+            <table class="points_table">
+              <thead>
+              <tr>
+                <th class="col-xs-4" style="background: #0093e0">Name</th>
+                <th class="col-xs-5" style="background: #e86f16">Mobile</th>
+                <th class="col-xs-1" style="background: #0093e0">SR ID</th>
+                <th class="col-xs-1" style="background: #e86f16">PRE</th>
+                <th class="col-xs-1" style="background: #0093e0"></th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr class="odd">
+                <td class="col-xs-4">Anil2</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="odd">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="odd">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="odd">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="odd">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="odd">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="odd">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="odd">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="odd">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="odd">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              <tr class="even">
+                <td class="col-xs-4">Anil</td>
+                <td class="col-xs-5">9026553313</td>
+                <td class="col-xs-1">6322</td>
+                <td class="col-xs-1">Yes</td>
+                <td class="col-xs-1"><img class="pointerCursor" data-toggle="modal" data-target="#eyeModal" src="assets/images/eye.png"></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <ul class="nav nav-pills precasesPagination">
+          <li class="tolalCase">Total Cases : 20</li>
+          <li class="active ActiveLeft"><a data-toggle="pill" href="#tab1">1</a></li>
+          <li class="personalisePitchNoBorder"><a data-toggle="pill" href="#tab2">2</a></li>
+          <li><a data-toggle="pill" href="#tab3">3</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Eye Popup -->
+<div class="modal fade" id="eyeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center" style="background-color: #0093e0;">
+        <button type="button" class="close" data-dismiss="modal" style="font-family:Arial; color:#fff;">&times;</button>
+        <h4 class="modal-title" style="color: #fff; font-size: 16px;" id="myModalLabel">Details</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>First Name : </h5>
+          </div>
+          <div class="col-md-6">
+            <input type="text" value="Preetam"/>
+          </div>
+          </div>
+          <div class="row">
+
+          <div class="col-md-4">
+            <h5>Last Name : </h5>
+          </div>
+          <div class="col-md-6">
+            <input type="text" value="Pandey"/>
+
+            <!-- <h5>Pandey</h5> -->
+          </div>
+          </div>
+          <div class="row">
+
+          <div class="col-md-4">
+            <h5>Age : </h5>
+          </div>
+          <div class="col-md-6">
+            <input type="text" value="24 Year"/>
+
+            <!-- <h5>24 Year</h5> -->
+          </div>
+          </div>
+          <div class="row">
+
+          <div class="col-md-4">
+            <h5>Gender : </h5>
+          </div>
+          <div class="col-md-6">
+            <!-- <h5>Male</h5> -->
+            <input type="text" value="Male"/>
+
+          </div>
+          </div>
+          <div class="row">
+
+          <div class="col-md-4">
+            <h5>Marital Status : </h5>
+          </div>
+          <div class="col-md-6">
+            <!-- <h5>Single</h5> -->
+            <input type="text" value="Single"/>
+
+          </div>
+          </div>
+          <div class="row">
+
+          <div class="col-md-4">
+            <h5>Location :</h5>
+          </div>
+          <div class="col-md-6">
+            <!-- <h5>Bangalore</h5> -->
+            <input type="text" value="Bangalore"/>
+
+          </div>
+          </div>
+          <div class="row">
+
+          <div class="col-md-4">
+            <h5>Occupation : </h5>
+          </div>
+          <div class="col-md-6">
+            <!-- <h5>Business</h5> -->
+            <input type="text" value="Business"/>
+
+          </div>
+          </div>
+          <div class="row">
+
+          <div class="col-md-4">
+            <h5>Income : </h5>
+          </div>
+          <div class="col-md-6">
+            <!-- <h5>20 Lakh</h5> -->
+            <input type="text" value="20 Lakh"/>
+
+          </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn closeBtnModal" data-dismiss="modal" style="background: red; border: red;color: #fff">Close</button>
+          <a routerLink="/RecommendMain" type="button" data-dismiss="modal" class="btn pull-left continueBtnModal" style="background-color: #0093e0; border: #0093e0; color: #fff">
+            Continue
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+<app-footer></app-footer>
