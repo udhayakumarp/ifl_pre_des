@@ -1,0 +1,97 @@
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+<div class="Get-Quote">
+
+  <div class="row activityRow">
+
+    <div class="col-sm-9 rightsideBigBar">
+      <div class="allThreeButtons text-center">
+        <a  routerLinkActive="active" class="topButtons noRightBorder" routerLink="/activity">Activity</a><a class="topButtons" routerLink="/precases">PRE cases</a>
+
+        <h5 class="breadCum"><a routerLink="/dashboard">Home</a> / <a routerLink="/getQuote">Get Quote</a></h5>
+      </div>
+      <div class="mainChangedDiv">
+        <h2 class="mainHeading">Get Quote</h2>
+        <div class="viewerDiv">
+          <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#home">SAVING PLAN</a></li>
+            <li><a data-toggle="pill" href="#menu1">CHILD PLAN</a></li>
+          </ul>
+          <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+              <h1 class="getQuoteHeading">Get a quote <span class="coloredText">ensure protection</span> </h1>
+              <form name="getQuoteForm">
+                <div class="row getQuoteFormRow">
+                  <div class="col-sm-6 form6Col">
+                    <label for="sumassured" class="formLabels">Sum assured</label>
+                    <input type="tel" id="sumassured" value="2,50,000" class="formInput">
+                  </div>
+                  <div class="col-sm-6 form6Col">
+                    <label for="termof" class="formLabels">For term of</label>
+                    <input type="text" id="termof" value="8 Years" class="formInput">
+                  </div>
+                </div>
+                <div class="row getQuoteFormRow">
+                  <div class="col-sm-6 form6Col">
+                    <label for="premiumMode" class="formLabels forPremiumMode">Premium Mode</label>
+                    <input type="text" id="premiumMode" value="Regular" class="formInput">
+                  </div>
+                  <div class="col-sm-6 form6Col">
+                    <label for="premiumReq" class="formLabels">Premium Frequency</label>
+                    <!--  <input type="text" id="premiumReq" value="Yearly" class="formInput"> -->
+
+                    <select class="form-control formInput-a">
+                      <option value="0" selected>Monthly</option>
+                      <option value="1">Quarterly</option>
+                      <option value="2">Yearly</option>
+
+                    </select>
+
+                  </div>
+                </div>
+              </form>
+
+              <div class="getQuoteBtnDiv">
+                <a routerLink="/QuoteDetails" class="btn getQuoteBtn">get quote</a>
+              </div>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+              <h1 class="getQuoteHeading">Get a quote <span class="coloredText">ensure protection</span></h1>
+              <form name="getQuoteForm">
+                <div class="row getQuoteFormRow">
+                  <div class="col-sm-6 form6Col">
+                    <label for="sumassured" class="formLabels">Sum assured</label>
+                    <input type="tel" id="sumassured" value="2,50,000" class="formInput">
+                  </div>
+                  <div class="col-sm-6 form6Col">
+                    <label for="termof" class="formLabels">For term of</label>
+                    <input type="text" id="termof" value="8 Years" class="formInput">
+                  </div>
+                </div>
+                <div class="row getQuoteFormRow">
+                  <div class="col-sm-6 form6Col">
+                    <label for="premiumMode" class="formLabels">Premium Mode</label>
+                    <input type="text" id="premiumMode"  value="Regular" class="formInput forPremiumMode">
+                  </div>
+                  <div class="col-sm-6 form6Col">
+                    <label for="premiumReq" class="formLabels">Premium Frequency</label>
+                    <select class="form-control formInput-a">
+                      <option value="0" selected>Monthly</option>
+                      <option value="1">Quarterly</option>
+                      <option value="2">Yearly</option>
+                    </select>
+                  </div>
+                </div>
+              </form>
+              <div class="getQuoteBtnDiv">
+                <a routerLink="/QuoteDetails" class="btn getQuoteBtn">get quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

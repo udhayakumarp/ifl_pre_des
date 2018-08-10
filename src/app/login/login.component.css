@@ -1,0 +1,166 @@
+.bg-Image {
+  background: url(../../assets/images/BG.jpg) center center fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+
+.mbottom {
+  margin-bottom: 25px;
+}
+
+.mtop {
+  margin-top: 10px;
+}
+
+.formPannel .login-form {
+  margin-top: 10%;
+}
+.formPannel .panel-info {
+  border-color: #c6c6c6;
+}
+.formPannel .panel {
+  border-radius: 0px;
+}
+
+.formPannel .panel-info>.panel-heading {
+  color: #000;
+  background: rgba(234, 234, 234, 0.5) !important;
+  border-color: transparent;
+}
+.formPannel .panel {
+  margin-bottom: 20px;
+  background-color: rgba(193, 193, 193, 0.5);
+  border: 1px solid transparent;
+  border-radius: 0px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+.formPannel .panel-info>.panel-heading {
+  /* background-image: -webkit-linear-gradient(top,#d9edf7 0,#c4e3f3 100%); */
+  background-image: -o-linear-gradient(top, #d9edf7 0, #c4e3f3 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d9edf7), to(#c4e3f3));
+  background-image: linear-gradient(to bottom, #d9edf7 0, #c4e3f3 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9edf7', endColorstr='#ffc4e3f3', GradientType=0);
+  background-repeat: repeat-x;
+}
+.formPannel .btn-login {
+  width: 100%;
+  background: #29ace4;
+  color: #fff;
+  border-radius: 0px;
+  height: 40px;
+  line-height: 2;
+}
+.formPannel .input-group-addon {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  color: #555;
+  text-align: center;
+  background-color: #cdcdcd;
+  border: 0px solid #ccc;
+  border-radius: 0px;
+}
+.ormPannel .input-group-addon img {
+  width: 25px;
+}
+.formPannel .fpwd span {
+  float: right;
+  color: #fff;
+  font-size: 14px;
+  font-style: italic;
+}
+.formPannel .checkbox {
+  padding-top: 0px;
+}
+.formPannel .btn-register {
+  width: 100%;
+  background: #cdcdcd;
+  color: #55504d;
+  border-radius: 0px;
+  height: 40px;
+  line-height: 2;
+  margin-top: 10px;
+}
+.formPannel .form-control {
+  padding: 6px 12px;
+  font-size: 16px;
+  background: #cdcdcd;
+  height: 50px;
+  color: #000;
+  border: 0px solid #cdcdcd;
+  border-radius: 0px;
+  box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075);
+}
+.formPannel #loginform h5 {
+  color: #fff;
+}
+.formPannel label {
+  color: #fff;
+  font-size: 14px;
+}
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #909090;
+  font-size: 17px;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #909090;
+  font-size: 17px;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #909090;
+  font-size: 17px;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #909090;
+  font-size: 17px;
+}
+.formPannel .panel-body {
+  margin: 0px 15px;
+}
+.formPannel .verifyotp-text {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 19px;
+  margin-top: 25px;
+}
+.formPannel .verify-input {
+  width: 100%;
+}
+.formPannel .resend-otp {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+  margin-top: 25px;
+}
+.formPannel .confirm-otp img {
+  width: 21%;
+  margin: 16px;
+}
+.formPannel .confirm-otp p {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+.formPannel .col-37 {
+  width: 37%;
+}
+
+
+@media (max-width:800px)
+{
+
+  .formPannel .col-37 {
+  width: 100%;
+  padding: 0px !important;
+}
+
+}

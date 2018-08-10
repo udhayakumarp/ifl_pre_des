@@ -1,0 +1,147 @@
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+<div class="Recommended">
+  <div class="row activityRow">
+    <div class="col-sm-9 rightsideBigBar">
+      <div class="allThreeButtons text-center">
+        <a  routerLinkActive="active" class="topButtons noRightBorder" routerLink="/activity">Activity</a><a class="topButtons" routerLink="/precases">PRE cases</a>
+
+        <h5 class="breadCum"><a routerLink="/dashboard">Home</a> / <a routerLink="/activity">Activity</a></h5>
+      </div>
+      <div class="mainChangedDiv">
+        <h2 class="mainHeading">Recommended</h2>
+        <div class="viewerDiv">
+          <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" class="pillInDemo" href="#home">Demographics</a></li>
+            <li class="personalisePitchNoBorder"><a data-toggle="pill" class="pillInDemo" href="#menu1">Personalised Pitch</a></li>
+            <li><a data-toggle="pill" class="pillInDemo" href="#menu2">Products</a></li>
+          </ul>
+          <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+              <div class="row">
+                <div class="col-sm-6 leftColDemographics">
+                  <div class="backColorDiv">
+                    <div class="row">
+                      <div class="col-md-6 col-xs-12 col-sm-12 text-left">
+                        <span class="newLine">First Name: <span class="yellowText">Preetham</span></span>
+                        <span class="newLine">Age: <span class="yellowText">24</span></span>
+                        <span class="newLine">Place: <span class="yellowText">Mumbai</span></span>
+                        <span class="newLine">Occupation: <span class="yellowText">Private</span></span>
+                        <span class="newLine">Marital Status: <span class="yellowText">Single</span></span>
+                      </div>
+                      <div class="col-md-6 col-xs-12 col-sm-12 text-right textLeft">
+                        <span class="newLine">Last Name: <span class="yellowText">Pandey</span></span>
+                        <span class="newLine">Gender: <span class="yellowText">Male</span></span>
+                        <span class="newLine">Place: <span class="yellowText">Mumbai</span></span>
+                        <span class="newLine">Income: <span class="yellowText">50,000</span></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 rightColDemographics">
+                  <img src="assets/imgs/imgs/Grey-Card.png" alt="grey card" data-toggle="modal" data-target=".bs-example-modal-sm" class="greyCard">
+                </div>
+              </div>
+              <div class="row iconsDownLists">
+                <img src="assets/imgs/imgs/Share-c.png" data-toggle="modal" data-target=".bs-example-modal-sm" id="demographicShare" alt="share" class="liconsDownListItems">
+                <a routerLink="/BuyNow">
+                  <img src="assets/imgs/imgs/Buy-now.png" alt="buy now" class="liconsDownListItems">
+                </a>
+                <a routerLink="/GetQuote">
+                  <img src="assets/imgs/imgs/getquoteshare.png" alt="get quote" class="liconsDownListItems">
+                </a>
+
+              </div>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+              <span class="buyNowHeadText">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+              <div class="row personalisedRow">
+                <div class="col-sm-6 personalisedCol">
+                  <img src="assets/imgs/imgs/pitchImage.png" alt="pitch image" class="personalisedPitchImg personalisedPitchImg1" id="pitchImg">
+                </div>
+                <div class="col-sm-6 personalisedCol">
+                  <img src="assets/imgs/imgs/Video.jpg" alt="video" class="personalisedPitchImg personalisedPitchImg2">
+                </div>
+              </div>
+              <div class="row iconsDownLists">
+                <img src="assets/imgs/imgs/Share-c.png" data-toggle="modal" data-target=".bs-example-modal-sm" alt="share" id="personalisedShare" class="liconsDownListItems">
+                <a routerLink="/BuyNow">
+                  <img src="assets/imgs/imgs/Buy-now.png" alt="buy now" class="liconsDownListItems">
+                </a>
+                <a routerLink="/GetQuote">
+                  <img src="assets/imgs/imgs/getquoteshare.png" alt="get quote" class="liconsDownListItems">
+                </a>
+
+              </div>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+              <span class="buyNowHeadText">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+              <div class="row productsRow">
+                <div class="col-sm-6 productsCol">
+                  <div class="productTextBox" id="redProduct">
+                    <h1 class="headingLeft">P1</h1>
+                    <form name="productCheckbox" class="productCheckBox">
+                      <label class="newContainer newContainer1">
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark mark1"></span>
+                      </label>
+                    </form>
+                    <p class="productText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </div>
+                <div class="col-sm-6 productsCol">
+                  <div class="productTextBox" id="blueProduct">
+                    <h1 class="headingLeft">P2</h1>
+                    <form name="productCheckbox" class="productCheckBox">
+                      <label class="newContainer newContainer2">
+                        <input type="checkbox">
+                        <span class="checkmark mark2"></span>
+                      </label>
+                    </form>
+                    <p class="productText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row iconsDownLists">
+                <img src="assets/imgs/imgs/Share-c.png" data-toggle="modal" data-target=".bs-example-modal-sm" alt="share" id="projectsShare" class="liconsDownListItems">
+                <a routerLink="/BuyNow">
+                  <img src="assets/imgs/imgs/Buy-now.png" alt="buy now" class="liconsDownListItems">
+                </a>
+                <a routerLink="/GetQuote">
+                  <img src="assets/imgs/imgs/getquoteshare.png" alt="get quote" class="liconsDownListItems">
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Small modal -->
+
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog" role="document">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+      <div class="innerPartModal">
+        <a href="#" target="_blank"><img src="assets/images/fb.png" alt="share" class="spaceImage"></a>
+        <a href="#" target="_blank"><img src="assets/images/twitter.png" alt="share" class="spaceImage"></a>
+        <a href="#" target="_blank"><img src="assets/images/whatsapp.png" alt="share" class="spaceImage"></a>
+        <a href="#" target="_blank"><img src="assets/images/linkedIn.png" alt="share" class="spaceImage"></a>
+        <a href="#" target="_blank"><img src="assets/images/insta.png" alt="share" class="spaceImage"></a>
+        <a href="#" target="_blank"><img src="assets/images/gplus.png" alt="share" class="spaceImage"></a>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<app-footer></app-footer>
